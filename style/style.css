@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.text-card {
+  padding: 3rem 9rem;
+  background: url("/images/bg-pattern-desktop.svg");
+  position: relative;
+}
+.text-card h1 {
+  margin-top: 6rem;
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  color: hsl(0deg, 6%, 24%);
+}
+.text-card h1 span {
+  color: hsl(0deg, 36%, 70%);
+  font-weight: 300;
+}
+.text-card p {
+  color: hsl(0deg, 36%, 70%);
+  font-size: 21px;
+  margin-top: 2rem;
+  line-height: 2rem;
+}
+.text-card .in {
+  display: flex;
+}
+.text-card input {
+  width: 100%;
+  padding: 1.4rem;
+  margin-top: 2rem;
+  border-radius: 30px;
+  border: hsl(0deg, 36%, 70%) 2px solid;
+}
+.text-card input::-moz-placeholder {
+  font-size: 18px;
+  color: hsl(0deg, 36%, 70%);
+}
+.text-card input:-ms-input-placeholder {
+  font-size: 18px;
+  color: hsl(0deg, 36%, 70%);
+}
+.text-card input::placeholder {
+  font-size: 18px;
+  color: hsl(0deg, 36%, 70%);
+}
+.text-card button {
+  padding: 1rem;
+  width: 120px;
+  height: 63px;
+  margin-top: 2.1rem;
+  margin-left: -7.2rem;
+  border-radius: 30px;
+  background: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
+  border: none;
+  cursor: pointer;
+}
+.text-card button img {
+  width: 18px;
+}
+.text-card button:hover {
+  background: hsl(0deg, 80%, 86%);
+}
+.text-card .icon {
+  position: absolute;
+  top: 75%;
+  left: 58%;
+  display: none;
+}
+.text-card .msg {
+  margin: 1rem 1.5rem;
+  font-size: 14px;
+  color: hsl(0deg, 93%, 68%);
+  display: none;
+}
+.text-card.error .icon, .text-card.error .msg {
+  display: block;
+}
+.text-card input.error {
+  border: 3px solid hsl(0deg, 93%, 68%);
+}
+
+.img-card img:last-child {
+  display: none;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    width: 100%;
+    overflow: visible;
+  }
+  main {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+  .text-card {
+    padding: 0 1rem;
+  }
+  .text-card .logo {
+    display: none;
+  }
+  .text-card h1 {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .text-card p {
+    font-size: 18px;
+    margin: 1rem;
+    text-align: center;
+  }
+  .text-card input {
+    width: 100%;
+  }
+  .text-card button {
+    width: 80px;
+    height: 62px;
+    margin-top: 2rem;
+    margin-left: -5rem;
+  }
+  .text-card .icon {
+    top: 85%;
+    left: 66%;
+  }
+  .text-card .msg {
+    margin: -1rem 0.5rem;
+  }
+  .img-card img:first-child {
+    display: none;
+  }
+  .img-card img:last-child {
+    display: block;
+    width: 100%;
+  }
+  .mobile-logo {
+    display: block;
+    padding: 2rem;
+  }
+  .mobile-logo img {
+    width: 120px;
+  }
+}/*# sourceMappingURL=style.css.map */
